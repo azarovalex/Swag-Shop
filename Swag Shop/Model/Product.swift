@@ -16,6 +16,6 @@ struct Product {
     init(title: String, price: String, imageName: String) {
         self.title = title
         self.price = price
-        self.imageName = price
+        self.imageName = imageName
     }
 }
