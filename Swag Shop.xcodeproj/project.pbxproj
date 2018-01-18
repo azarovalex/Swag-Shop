@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DFB769092010A7E20031A90B /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB769082010A7E20031A90B /* ProductCell.swift */; };
+		DFB7690B201134EB0031A90B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB7690A201134EB0031A90B /* Product.swift */; };
+		DFB7690D201141350031A90B /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB7690C201141350031A90B /* ProductsVC.swift */; };
 		DFD7661E20101AA90067CDAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7661D20101AA90067CDAF /* AppDelegate.swift */; };
-		DFD7662020101AA90067CDAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7661F20101AA90067CDAF /* ViewController.swift */; };
+		DFD7662020101AA90067CDAF /* CategoriesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7661F20101AA90067CDAF /* CategoriesVC.swift */; };
 		DFD7662320101AA90067CDAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD7662120101AA90067CDAF /* Main.storyboard */; };
 		DFD7662520101AA90067CDAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD7662420101AA90067CDAF /* Assets.xcassets */; };
 		DFD7662820101AA90067CDAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD7662620101AA90067CDAF /* LaunchScreen.storyboard */; };
+		DFD7663320102CE00067CDAF /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7663220102CE00067CDAF /* CategoryCell.swift */; };
+		DFD7663520102F060067CDAF /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7663420102F060067CDAF /* Category.swift */; };
+		DFD76638201032280067CDAF /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD76637201032280067CDAF /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DFB769082010A7E20031A90B /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		DFB7690A201134EB0031A90B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		DFB7690C201141350031A90B /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 		DFD7661A20101AA90067CDAF /* Swag Shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swag Shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD7661D20101AA90067CDAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DFD7661F20101AA90067CDAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DFD7661F20101AA90067CDAF /* CategoriesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesVC.swift; sourceTree = "<group>"; };
 		DFD7662220101AA90067CDAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFD7662420101AA90067CDAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFD7662720101AA90067CDAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFD7662920101AA90067CDAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFD7663220102CE00067CDAF /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		DFD7663420102F060067CDAF /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		DFD76637201032280067CDAF /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,52 @@
 		DFD7661C20101AA90067CDAF /* Swag Shop */ = {
 			isa = PBXGroup;
 			children = (
+				DFD766362010321A0067CDAF /* Services */,
+				DFD7663020102C6D0067CDAF /* Model */,
+				DFD7663120102C720067CDAF /* View */,
+				DFD7662F20102C610067CDAF /* Controller */,
 				DFD7661D20101AA90067CDAF /* AppDelegate.swift */,
-				DFD7661F20101AA90067CDAF /* ViewController.swift */,
 				DFD7662120101AA90067CDAF /* Main.storyboard */,
 				DFD7662420101AA90067CDAF /* Assets.xcassets */,
 				DFD7662620101AA90067CDAF /* LaunchScreen.storyboard */,
 				DFD7662920101AA90067CDAF /* Info.plist */,
 			);
 			path = "Swag Shop";
+			sourceTree = "<group>";
+		};
+		DFD7662F20102C610067CDAF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DFD7661F20101AA90067CDAF /* CategoriesVC.swift */,
+				DFB7690C201141350031A90B /* ProductsVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DFD7663020102C6D0067CDAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DFD7663420102F060067CDAF /* Category.swift */,
+				DFB7690A201134EB0031A90B /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DFD7663120102C720067CDAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFD7663220102CE00067CDAF /* CategoryCell.swift */,
+				DFB769082010A7E20031A90B /* ProductCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DFD766362010321A0067CDAF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DFD76637201032280067CDAF /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +186,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFD7662020101AA90067CDAF /* ViewController.swift in Sources */,
+				DFB7690D201141350031A90B /* ProductsVC.swift in Sources */,
+				DFD7662020101AA90067CDAF /* CategoriesVC.swift in Sources */,
 				DFD7661E20101AA90067CDAF /* AppDelegate.swift in Sources */,
+				DFD7663320102CE00067CDAF /* CategoryCell.swift in Sources */,
+				DFB769092010A7E20031A90B /* ProductCell.swift in Sources */,
+				DFD7663520102F060067CDAF /* Category.swift in Sources */,
+				DFD76638201032280067CDAF /* DataService.swift in Sources */,
+				DFB7690B201134EB0031A90B /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CLALR9F4Q5;
 				INFOPLIST_FILE = "Swag Shop/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "by.azarov.Swag-Shop";
@@ -289,6 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CLALR9F4Q5;
 				INFOPLIST_FILE = "Swag Shop/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "by.azarov.Swag-Shop";
